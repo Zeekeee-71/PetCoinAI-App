@@ -1,0 +1,64 @@
+{
+  "expo": {
+    "name": "PetCoinAI",
+    "slug": "petcoinai_app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#707BFB"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "petcoinai.ca"
+    },
+    "android": {
+      "softwareKeyboardLayoutMode": "pan",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#707BFB"
+      },
+      "package": "petcoinai.ca",
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ]
+    },
+    "androidNavigationBar": {
+      "barStyle": "dark-content",
+      "backgroundColor": "#FFFFFF"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "cameraPermission": "The app need accesses your camera to take photo of your pet."
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/not-icon.png",
+          "color": "#ffffff"
+        }
+      ],
+      "./withJitPack.js"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "bae98591-27cb-4fcb-99fc-77a349df5752"
+      }
+    }
+  }
+}
