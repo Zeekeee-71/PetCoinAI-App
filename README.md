@@ -14,8 +14,7 @@ A cross-platform React Native application that uses a local SQLite database for 
 1. **Update Homebrew**
 
    ```bash
-   brew update
-   ```
+   brew update```
 
 2. **Install Watchman (recommended by React Native)**
 
