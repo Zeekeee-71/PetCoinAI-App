@@ -50,17 +50,28 @@ A cross-platform React Native application that uses a local SQLite database for 
     ```bash
     sudo xcode-select -s /Applications/Xcode.app/Contents/Developer
 
-10. Verify Xcode developer path
+10. **Verify Xcode developer path**
     ``` bash
     xcode-select -p
 
-11. Install project dependencies
+11. **Install project dependencies**
 From your project root:
 
     ```bash
     npm install
     cd ios && pod install && cd ..
 
-12. Run the app on iOS simulator
+12. **Run the app on iOS simulator**
     ```bash
     npm run ios
+
+
+**For exporting the sdk**
+    ```bash
+    eas login
+
+    eas build:configure
+
+    npm install -g eas-cli
+
+    eas build -p android --profile preview
