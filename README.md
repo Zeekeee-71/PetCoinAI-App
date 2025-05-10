@@ -65,8 +65,7 @@ From your project root:
     ```bash
     npm run ios
 
-
-**For exporting the sdk**
+13. **For exporting the sdk(optional)**
     ```bash
     eas login
 
