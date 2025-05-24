@@ -71,6 +71,18 @@ const CustomTabBar = ({ state, descriptors, navigation }) => {
                   size={25}
                   color={isFocused ? "#EE7942" : "#222"}
                 />
+              ) : label === "Maps" ? (
+                <Icon
+                  name={isFocused ? "map" : "navigate-outline"}
+                  size={25}
+                  color={isFocused ? "#EE7942" : "#222"}
+                />
+              ) : label === "ChatBot" ? (
+                <Icon
+                  name={isFocused ? "chatbox" : "chatbox-outline"}
+                  size={25}
+                  color={isFocused ? "#EE7942" : "#222"}
+                />
               ) : label === "Menu" ? (
                 <Icon
                   name={isFocused ? "grid" : "grid-outline"}

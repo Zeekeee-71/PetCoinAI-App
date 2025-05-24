@@ -5,12 +5,15 @@ import { NavigationContainer } from "@react-navigation/native";
 import Mypet from "../screens/MyPet/MyPet";
 import ActivitiesNavigation from "./ActivitiesNavigation";
 import HealtNavigations from "./HealtNavigations";
+import MapsNavigation from "./MapsNavigation";
+// import ChatBotNavigation from "./ChatBotNavigation";
 import Menu from "../screens/Menu/Menu";
 import { useSelector } from "react-redux";
 import {
   CustomMainHeaderLeft,
   CustomMainHeaderRight,
 } from "../components/ui/CustomHeader/CustomMainHeader";
+import Chatbot from "../screens/Chatbot/Chatbot";
 
 import CustomTabBar from "../components/ui/CustomTabBar/CustomTabBar";
 
@@ -66,6 +69,29 @@ const BottomTabBarNavigations = ({ navigation }) => {
           headerShown: false,
         }}
         component={HealtNavigations}
+      />
+      <Tab.Screen
+        name="Maps"
+        options={{
+          headerShown: false,
+        }}
+        component={MapsNavigation} // <-- Add the Maps tab here
+      />
+      <Tab.Screen
+        name="ChatBot"
+        component={Chatbot}
+        options={({ navigation }) => ({
+          headerStyle: {
+            shadowColor: "transparent", // this covers iOS
+            elevation: 0, // this covers Android
+            height: 120,
+          },
+          headerTitleStyle: {
+            display: "none",
+          },
+          headerLeft: () => <CustomMainHeaderLeft isNameVisible={true} />,
+          headerRight: () => <CustomMainHeaderRight navigation={navigation} />,
+        })}
       />
       <Tab.Screen
         name="Menu"

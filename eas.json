@@ -9,9 +9,12 @@
     },
     "preview": {
       "android": {
-        "buildType": "apk"
+        "buildType": "apk",
+        "node": "18.18.0",
+        "env": {
+          "EXPO_CLI_VERSION": "6.3.10"
+        }
       },
-      "node": "16.19.0",
       "distribution": "internal"
     },
     "production": {}

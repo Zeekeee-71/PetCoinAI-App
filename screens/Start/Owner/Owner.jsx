@@ -36,12 +36,12 @@ const Owner = ({ navigation }) => {
     if (owner === "") {
       return Alert.alert("oops...", "Please enter your name");
     }
-    if (owner.length > 20 || owner.length < 4) {
-      return Alert.alert(
-        "oops...",
-        "Please enter your name(max 20 chracter and min 4)"
-      );
-    }
+    // if (owner.length > 20 || owner.length < 4) {
+    //   return Alert.alert(
+    //     "oops...",
+    //     "Please enter your name(max 20 chracter and min 4)"
+    //   );
+    // }
     if (/\d/.test(owner)) {
       return Alert.alert("oops...", "Please enter your name without number");
     }
